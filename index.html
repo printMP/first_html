@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-<title>First-HTML</title>
-<h1><u>My First HTML Heading</u></h1>
+<head>
+    <title>HTML Code Tester</title>
+    <link rel="stylesheet" href="./style2.css" />
+</head>
 <body>
-    <p style="color:red;">My first paragraph.</p>
-    <p style="color:blue;">..This is still not a full paragraph</p>
-    <p>
-        We are almost there to a full paragraph!
-        I believe this concludes our paragraph; Not great, but it'll do.
-    </p>
+    <div class="container">
+        <h1 style="color:black;"><u>Test Out Your HTML Code </u></h1>
+        <div class="toolbar">
+            <div>
+                <button onclick="insertTable()">Insert Table</button>
+            </div>
+            <div>
+                <button onclick="selectText()">Select Text</button>
+                <button onclick="applyBold()">Bold</button>
+                <!--<button onclick="applyright()">Align Right</button>-->
+            </div>
+        </div>
+        <label for="code">Enter your HTML code:</label>
+        <textarea id="code" rows="10">
+      </textarea>
+        <button onclick="preview()">Preview</button>
+        <div id="preview" class="preview"></div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
 
