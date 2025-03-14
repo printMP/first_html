@@ -41,7 +41,7 @@ textarea {
 
 button {
     background-color: white;
-    border: none;
+    border: 1px black solid;
     border-radius: 4px;
     color: black;
     cursor: pointer;
@@ -70,8 +70,18 @@ button {
     justify-content: space-between;
     align-items: center;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
     .toolbar button {
         margin-right: 1em;
     }
+
+@media only screen and (max-width: 415px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    button {
+        padding: 0;
+    }
+}
