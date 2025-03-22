@@ -77,6 +77,13 @@ button {
         margin-right: 1em;
     }
 
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
 @media only screen and (max-width: 415px) {
     h1 {
         font-size: 1.5em;
